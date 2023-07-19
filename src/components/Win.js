@@ -13,9 +13,9 @@ export default function Win(props) {
 
     return (
         <div className="Win">
-            {/* <Confetti /> */}
+            <Confetti />
             <h1 style={{ color: "white", fontSize: "4rem" }}>You Won</h1>
-            <div onClick={() => props.onClick()} role="button" >
+            <div onClick={() => props.onClick()} role="button" style={{zIndex:1010000}}>
                 <img src={reset} style={{ width: "80px", filter: "invert(100%)" }} alt="reset button" className="reset--button" />
             </div>
         </div>
